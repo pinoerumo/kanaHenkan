@@ -1,0 +1,6 @@
+module Pods_kanaHenkan {
+  umbrella header "Pods-kanaHenkan-umbrella.h"
+
+  export *
+  module * { export * }
+}

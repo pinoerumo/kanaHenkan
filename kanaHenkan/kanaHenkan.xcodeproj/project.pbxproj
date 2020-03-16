@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4BDA72637D48D9717D098A /* libPods-kanaHenkanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B20CD04CA4743AC481F942 /* libPods-kanaHenkanTests.a */; };
+		184E7C399E031E542BBDE51C /* libPods-kanaHenkan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A860091EC73BD9226F8F4D /* libPods-kanaHenkan.a */; };
+		2DBFDBA7B245F62FBA45E811 /* libPods-kanaHenkan-kanaHenkanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5D29C79D25035CDF376268 /* libPods-kanaHenkan-kanaHenkanUITests.a */; };
 		EF5DFE6B241F94D30084AC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6A241F94D30084AC0F /* AppDelegate.swift */; };
 		EF5DFE6D241F94D30084AC0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6C241F94D30084AC0F /* SceneDelegate.swift */; };
 		EF5DFE74241F94E20084AC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DFE73241F94E20084AC0F /* Assets.xcassets */; };
@@ -51,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28B20CD04CA4743AC481F942 /* libPods-kanaHenkanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kanaHenkanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3B01ABC3C91C08563BD61D /* Pods-kanaHenkan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkan.debug.xcconfig"; path = "Target Support Files/Pods-kanaHenkan/Pods-kanaHenkan.debug.xcconfig"; sourceTree = "<group>"; };
+		76677E6DBFB1CA9BBC852290 /* Pods-kanaHenkanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkanTests.release.xcconfig"; path = "Target Support Files/Pods-kanaHenkanTests/Pods-kanaHenkanTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B5D29C79D25035CDF376268 /* libPods-kanaHenkan-kanaHenkanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kanaHenkan-kanaHenkanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EE8815E763703965DA8DE0 /* Pods-kanaHenkan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkan.release.xcconfig"; path = "Target Support Files/Pods-kanaHenkan/Pods-kanaHenkan.release.xcconfig"; sourceTree = "<group>"; };
+		A7F891DA3D7C94153D511AFB /* Pods-kanaHenkan-kanaHenkanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkan-kanaHenkanUITests.debug.xcconfig"; path = "Target Support Files/Pods-kanaHenkan-kanaHenkanUITests/Pods-kanaHenkan-kanaHenkanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B118FBD4A613850C78185F76 /* Pods-kanaHenkan-kanaHenkanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkan-kanaHenkanUITests.release.xcconfig"; path = "Target Support Files/Pods-kanaHenkan-kanaHenkanUITests/Pods-kanaHenkan-kanaHenkanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0A860091EC73BD9226F8F4D /* libPods-kanaHenkan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kanaHenkan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7CF478BC23BEBDEE7A9B3D /* Pods-kanaHenkanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kanaHenkanTests.debug.xcconfig"; path = "Target Support Files/Pods-kanaHenkanTests/Pods-kanaHenkanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF5DFE67241F94D20084AC0F /* kanaHenkan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kanaHenkan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5DFE6A241F94D30084AC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5DFE6C241F94D30084AC0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184E7C399E031E542BBDE51C /* libPods-kanaHenkan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4BDA72637D48D9717D098A /* libPods-kanaHenkanTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +104,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBFDBA7B245F62FBA45E811 /* libPods-kanaHenkan-kanaHenkanUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DB5058109662CBB2D39F559 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C3B01ABC3C91C08563BD61D /* Pods-kanaHenkan.debug.xcconfig */,
+				A0EE8815E763703965DA8DE0 /* Pods-kanaHenkan.release.xcconfig */,
+				A7F891DA3D7C94153D511AFB /* Pods-kanaHenkan-kanaHenkanUITests.debug.xcconfig */,
+				B118FBD4A613850C78185F76 /* Pods-kanaHenkan-kanaHenkanUITests.release.xcconfig */,
+				DF7CF478BC23BEBDEE7A9B3D /* Pods-kanaHenkanTests.debug.xcconfig */,
+				76677E6DBFB1CA9BBC852290 /* Pods-kanaHenkanTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B12406B901FCE0565B04DF9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A860091EC73BD9226F8F4D /* libPods-kanaHenkan.a */,
+				8B5D29C79D25035CDF376268 /* libPods-kanaHenkan-kanaHenkanUITests.a */,
+				28B20CD04CA4743AC481F942 /* libPods-kanaHenkanTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF5DFE5E241F94D20084AC0F = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +142,8 @@
 				EF5DFE80241F94E30084AC0F /* kanaHenkanTests */,
 				EF5DFE8B241F94E30084AC0F /* kanaHenkanUITests */,
 				EF5DFE68241F94D20084AC0F /* Products */,
+				3DB5058109662CBB2D39F559 /* Pods */,
+				B12406B901FCE0565B04DF9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF5DFE91241F94E30084AC0F /* Build configuration list for PBXNativeTarget "kanaHenkan" */;
 			buildPhases = (
+				5F8FEA1E13E12D9740D61399 /* [CP] Check Pods Manifest.lock */,
 				EF5DFE63241F94D20084AC0F /* Sources */,
 				EF5DFE64241F94D20084AC0F /* Frameworks */,
 				EF5DFE65241F94D20084AC0F /* Resources */,
+				74A7CBB64771985930F8B8EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF5DFE94241F94E30084AC0F /* Build configuration list for PBXNativeTarget "kanaHenkanTests" */;
 			buildPhases = (
+				67FBE4FA9936BC0B720543D6 /* [CP] Check Pods Manifest.lock */,
 				EF5DFE79241F94E30084AC0F /* Sources */,
 				EF5DFE7A241F94E30084AC0F /* Frameworks */,
 				EF5DFE7B241F94E30084AC0F /* Resources */,
@@ -258,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF5DFE97241F94E30084AC0F /* Build configuration list for PBXNativeTarget "kanaHenkanUITests" */;
 			buildPhases = (
+				A420113305CE240B53C947BE /* [CP] Check Pods Manifest.lock */,
 				EF5DFE84241F94E30084AC0F /* Sources */,
 				EF5DFE85241F94E30084AC0F /* Frameworks */,
 				EF5DFE86241F94E30084AC0F /* Resources */,
+				690C65E74F9C057A7D893BA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,6 +389,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F8FEA1E13E12D9740D61399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kanaHenkan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FBE4FA9936BC0B720543D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kanaHenkanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		690C65E74F9C057A7D893BA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan-kanaHenkanUITests/Pods-kanaHenkan-kanaHenkanUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan-kanaHenkanUITests/Pods-kanaHenkan-kanaHenkanUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan-kanaHenkanUITests/Pods-kanaHenkan-kanaHenkanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A7CBB64771985930F8B8EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan/Pods-kanaHenkan-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan/Pods-kanaHenkan-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kanaHenkan/Pods-kanaHenkan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A420113305CE240B53C947BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kanaHenkan-kanaHenkanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF5DFE63241F94D20084AC0F /* Sources */ = {
@@ -528,6 +677,7 @@
 		};
 		EF5DFE92241F94E30084AC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C3B01ABC3C91C08563BD61D /* Pods-kanaHenkan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +696,7 @@
 		};
 		EF5DFE93241F94E30084AC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0EE8815E763703965DA8DE0 /* Pods-kanaHenkan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +715,7 @@
 		};
 		EF5DFE95241F94E30084AC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7CF478BC23BEBDEE7A9B3D /* Pods-kanaHenkanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -586,6 +738,7 @@
 		};
 		EF5DFE96241F94E30084AC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76677E6DBFB1CA9BBC852290 /* Pods-kanaHenkanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +761,7 @@
 		};
 		EF5DFE98241F94E30084AC0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F891DA3D7C94153D511AFB /* Pods-kanaHenkan-kanaHenkanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,6 +782,7 @@
 		};
 		EF5DFE99241F94E30084AC0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B118FBD4A613850C78185F76 /* Pods-kanaHenkan-kanaHenkanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

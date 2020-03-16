@@ -1,0 +1,6 @@
+module Pods_kanaHenkan_kanaHenkanUITests {
+  umbrella header "Pods-kanaHenkan-kanaHenkanUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
