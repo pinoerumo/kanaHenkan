@@ -10,11 +10,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13, *) {
+        } else {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            self.window = window
+            window.makeKeyAndVisible()
+
+            let vc = KHConversionViewController()
+            window.rootViewController = vc
+        }
         return true
     }
 

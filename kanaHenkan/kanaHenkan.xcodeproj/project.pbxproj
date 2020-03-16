@@ -19,6 +19,18 @@
 		EF5DFEC0241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */; };
 		EF5DFEC1241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */; };
 		EF5DFEC2241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */; };
+		EF5DFECB241FA6E40084AC0F /* KHConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */; };
+		EF5DFECC241FA6E40084AC0F /* KHConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */; };
+		EF5DFECD241FA6E40084AC0F /* KHConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */; };
+		EF5DFECE241FA6E40084AC0F /* KHConversionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */; };
+		EF5DFECF241FA6E40084AC0F /* KHConversionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */; };
+		EF5DFED0241FA6E40084AC0F /* KHConversionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */; };
+		EF5DFED1241FA6E40084AC0F /* KHConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFECA241FA6E40084AC0F /* KHConversionViewController.swift */; };
+		EF5DFED2241FA6E40084AC0F /* KHConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFECA241FA6E40084AC0F /* KHConversionViewController.swift */; };
+		EF5DFED3241FA6E40084AC0F /* KHConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFECA241FA6E40084AC0F /* KHConversionViewController.swift */; };
+		EF5DFED5241FAA410084AC0F /* KHConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */; };
+		EF5DFED6241FAA410084AC0F /* KHConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */; };
+		EF5DFED7241FAA410084AC0F /* KHConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +65,10 @@
 		EF5DFE8E241F94E30084AC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF5DFEB9241FA33C0084AC0F /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hexColor.swift"; sourceTree = "<group>"; };
+		EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHConversionView.swift; sourceTree = "<group>"; };
+		EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KHConversionView.xib; sourceTree = "<group>"; };
+		EF5DFECA241FA6E40084AC0F /* KHConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KHConversionViewController.swift; sourceTree = "<group>"; };
+		EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHConversionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5DFEB8241FA2E30084AC0F /* Common */,
+				EF5DFEC3241FA6C40084AC0F /* Display */,
 				EF5DFEBE241FA3E20084AC0F /* Extension */,
 			);
 			path = Source;
@@ -154,6 +171,49 @@
 				EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF5DFEC3241FA6C40084AC0F /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFEC4241FA6E40084AC0F /* KanaConversionViewController */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		EF5DFEC4241FA6E40084AC0F /* KanaConversionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFEC5241FA6E40084AC0F /* Model */,
+				EF5DFEC6241FA6E40084AC0F /* View */,
+				EF5DFEC9241FA6E40084AC0F /* ViewController */,
+			);
+			path = KanaConversionViewController;
+			sourceTree = "<group>";
+		};
+		EF5DFEC5241FA6E40084AC0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF5DFEC6241FA6E40084AC0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */,
+				EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF5DFEC9241FA6E40084AC0F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFECA241FA6E40084AC0F /* KHConversionViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5DFE77241F94E20084AC0F /* LaunchScreen.storyboard in Resources */,
+				EF5DFECE241FA6E40084AC0F /* KHConversionView.xib in Resources */,
 				EF5DFE74241F94E20084AC0F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DFECF241FA6E40084AC0F /* KHConversionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DFED0241FA6E40084AC0F /* KHConversionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +350,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5DFE6B241F94D30084AC0F /* AppDelegate.swift in Sources */,
+				EF5DFECB241FA6E40084AC0F /* KHConversionView.swift in Sources */,
+				EF5DFED1241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEC0241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
 				EF5DFEBA241FA33C0084AC0F /* CommonView.swift in Sources */,
 				EF5DFE6D241F94D30084AC0F /* SceneDelegate.swift in Sources */,
+				EF5DFED5241FAA410084AC0F /* KHConversionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DFED6241FAA410084AC0F /* KHConversionModel.swift in Sources */,
 				EF5DFEC1241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
+				EF5DFECC241FA6E40084AC0F /* KHConversionView.swift in Sources */,
 				EF5DFE82241F94E30084AC0F /* kanaHenkanTests.swift in Sources */,
+				EF5DFED2241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEBB241FA33C0084AC0F /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,8 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DFED7241FAA410084AC0F /* KHConversionModel.swift in Sources */,
 				EF5DFEC2241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
+				EF5DFECD241FA6E40084AC0F /* KHConversionView.swift in Sources */,
 				EF5DFE8D241F94E30084AC0F /* kanaHenkanUITests.swift in Sources */,
+				EF5DFED3241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEBC241FA33C0084AC0F /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
