@@ -9,6 +9,7 @@
 import UIKit
 
 class KHConversionModel {
+    /**変換前文字列*/
     var conversionStr : String = ""
     
     func requestConversion(conversionStr: String,

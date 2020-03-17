@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import PKHUD
 
 final class NetworkManager: NSObject {
     static let shared = NetworkManager()
@@ -22,12 +23,15 @@ final class NetworkManager: NSObject {
             "output_type": "hiragana"
         ]
         
+        PKHUD.sharedHUD.contentView = PKHUDProgressView()
+        PKHUD.sharedHUD.show()
         AF.request("https://labs.goo.ne.jp/api/hiragana",
                    method: .post,
                    parameters: parameters,
                    encoding: JSONEncoding.default, headers: nil)
             .responseJSON { (dataResponse) in
                 DispatchQueue.main.async {
+                    PKHUD.sharedHUD.hide()
                     if let error = dataResponse.error {
                         completion(.failure(.network(error.localizedDescription)))
                         return
@@ -44,7 +48,12 @@ final class NetworkManager: NSObject {
                     }
                     
                     if let result = try? JSONDecoder().decode(Convert.self, from: data) {
-                        completion(.success(result))
+                        PKHUD.sharedHUD.contentView = PKHUDSuccessView()
+                        PKHUD.sharedHUD.show()
+                        
+                        PKHUD.sharedHUD.hide(afterDelay: 1.0) { success in
+                            completion(.success(result))
+                        }
                         return
                     }
                     completion(.failure(.invalidJSON))
