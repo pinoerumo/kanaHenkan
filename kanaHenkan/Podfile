@@ -2,8 +2,9 @@
 platform :ios, '13.0'
 target 'kanaHenkan' do
   # Comment the next line if you don't want to use dynamic frameworks
-  pod 'SVProgressHUD'
   pod 'Alamofire' 
+  pod 'PKHUD', '~> 5.0'
+  pod 'IQKeyboardManagerSwift'
 
   # Pods for kanaHenkan
 
