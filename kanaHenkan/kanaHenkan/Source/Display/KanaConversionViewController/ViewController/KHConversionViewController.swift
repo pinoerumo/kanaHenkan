@@ -14,9 +14,17 @@ class KHConversionViewController: UIViewController {
     
     override func loadView() {
         self.view = conversionView;
+        conversionView.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension KHConversionViewController: KHConversionViewDelegate{
+    
+    /// 変換ボタン押下時のデリゲートメソッド
+    func conversionView(_ conversionView: KHConversionView, tappedConversionButton button: UIButton) {
     }
 }

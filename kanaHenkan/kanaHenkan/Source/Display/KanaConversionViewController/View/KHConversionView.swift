@@ -8,7 +8,14 @@
 
 import UIKit
 
+protocol KHConversionViewDelegate: AnyObject {
+    func conversionView(_ conversionView: KHConversionView,
+                        tappedConversionButton button: UIButton)
+}
+
 class KHConversionView: CommonView {
+    weak var delegate: KHConversionViewDelegate?
+    
     /**変換文字列が入っていない場合表示するラベル*/
     @IBOutlet var cautionLabel: UILabel!
     /**変換文字列入力テキストフィールド*/
@@ -19,9 +26,7 @@ class KHConversionView: CommonView {
     
     /// 変換ボタン押下時メソッド
     /// - Parameter sender: 変換ボタン
-    @IBAction func tappedConversionButton(_ sender: Any) {
-        
+    @IBAction func tappedConversionButton(_ sender: UIButton) {
+        delegate?.conversionView(self, tappedConversionButton: sender)
     }
-    
-    
 }
