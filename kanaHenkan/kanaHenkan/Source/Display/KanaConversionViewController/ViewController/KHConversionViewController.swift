@@ -30,6 +30,13 @@ class KHConversionViewController: UIViewController {
 extension KHConversionViewController: KHConversionViewDelegate{
     /// 変換ボタン押下時のデリゲートメソッド
     func conversionView(_ conversionView: KHConversionView, tappedConversionButton button: UIButton) {
+        model.conversionStr = conversionView.conversionTextField.text ?? ""
+        
+        if(model.conversionStr.count != 0){
+            
+        }else{
+            conversionView.cautionLabel.isHidden = false
+        }
     }
 }
 

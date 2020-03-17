@@ -8,6 +8,11 @@
 
 import UIKit
 
-class KHConversionModel: NSObject {
-
+class KHConversionModel {
+    var conversionStr : String = ""
+    
+    func requestConversion(conversionStr: String,
+                           completion: @escaping (Result<Convert, APIError>) -> Void) {
+        NetworkManager.shared.requestConvert(beforeStr: conversionStr, completion: completion)
+    }
 }
