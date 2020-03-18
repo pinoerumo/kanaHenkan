@@ -25,8 +25,19 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfP-Fy-qI9" userLabel="ConversionUIView">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                             <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-Ao-0Ul">
+                                    <rect key="frame" x="40" y="383" width="235" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字が入力されていません" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-qj-Qhp">
+                                    <rect key="frame" x="0.0" y="337" width="375" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.44024700935606953" blue="0.37492931432096566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEY-iE-XbF">
-                                    <rect key="frame" x="157.5" y="403" width="60" height="44"/>
+                                    <rect key="frame" x="295" y="378" width="60" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="DLM-rH-Zj2"/>
                                         <constraint firstAttribute="width" constant="60" id="UIi-AJ-XxT"/>
@@ -38,32 +49,21 @@
                                         <action selector="tappedConversionButton:" destination="-1" eventType="touchUpInside" id="BB4-OI-FBv"/>
                                     </connections>
                                 </button>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-Ao-0Ul">
-                                    <rect key="frame" x="37.5" y="339" width="300" height="34"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                </textField>
-                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字が入力されていません" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-qj-Qhp">
-                                    <rect key="frame" x="0.0" y="293" width="375" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="1" green="0.44024700935606953" blue="0.37492931432096566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="vMt-Ao-0Ul" firstAttribute="top" secondItem="2Y9-qj-Qhp" secondAttribute="bottom" constant="25" id="0Bg-EM-Chl"/>
-                                <constraint firstItem="vMt-Ao-0Ul" firstAttribute="width" secondItem="EfP-Fy-qI9" secondAttribute="width" multiplier="0.8" id="95G-iT-dP3"/>
-                                <constraint firstAttribute="bottom" secondItem="pEY-iE-XbF" secondAttribute="bottom" constant="20" id="Fqd-a6-Ytf"/>
+                                <constraint firstItem="pEY-iE-XbF" firstAttribute="leading" secondItem="vMt-Ao-0Ul" secondAttribute="trailing" constant="20" id="G2N-qs-WrK"/>
+                                <constraint firstItem="vMt-Ao-0Ul" firstAttribute="leading" secondItem="EfP-Fy-qI9" secondAttribute="leading" constant="40" id="Hjc-b9-GmS"/>
                                 <constraint firstItem="2Y9-qj-Qhp" firstAttribute="centerX" secondItem="EfP-Fy-qI9" secondAttribute="centerX" id="LVU-Dh-GMi"/>
-                                <constraint firstItem="pEY-iE-XbF" firstAttribute="top" secondItem="vMt-Ao-0Ul" secondAttribute="bottom" constant="30" id="P0e-yJ-XRA"/>
-                                <constraint firstItem="vMt-Ao-0Ul" firstAttribute="centerX" secondItem="EfP-Fy-qI9" secondAttribute="centerX" id="TaA-J1-F4v"/>
-                                <constraint firstItem="pEY-iE-XbF" firstAttribute="centerX" secondItem="EfP-Fy-qI9" secondAttribute="centerX" id="WbM-47-KP3"/>
+                                <constraint firstAttribute="bottom" secondItem="vMt-Ao-0Ul" secondAttribute="bottom" constant="50" id="XpS-V9-CzC"/>
                                 <constraint firstAttribute="trailing" secondItem="2Y9-qj-Qhp" secondAttribute="trailing" id="cN0-ap-Rwa"/>
                                 <constraint firstItem="2Y9-qj-Qhp" firstAttribute="leading" secondItem="EfP-Fy-qI9" secondAttribute="leading" id="geh-4H-Z3M"/>
+                                <constraint firstItem="pEY-iE-XbF" firstAttribute="centerY" secondItem="vMt-Ao-0Ul" secondAttribute="centerY" id="oHf-as-lGx"/>
+                                <constraint firstAttribute="trailing" secondItem="pEY-iE-XbF" secondAttribute="trailing" constant="20" id="oKJ-GJ-qlk"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egO-H0-azM">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egO-H0-azM" userLabel="ConversionTypeChangeView">
                             <rect key="frame" x="0.0" y="467" width="375" height="200"/>
                             <subviews>
                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-If-Tpl">
