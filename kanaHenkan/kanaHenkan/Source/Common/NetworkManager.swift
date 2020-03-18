@@ -31,31 +31,35 @@ final class NetworkManager: NSObject {
                    encoding: JSONEncoding.default, headers: nil)
             .responseJSON { (dataResponse) in
                 DispatchQueue.main.async {
-                    PKHUD.sharedHUD.hide()
                     if let error = dataResponse.error {
+                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                        PKHUD.sharedHUD.hide()
                         completion(.failure(.network(error.localizedDescription)))
                         return
                     }
                     
                     if dataResponse.response?.statusCode != 200 {
+                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                        PKHUD.sharedHUD.hide()
                         completion(.failure(.server))
                         return
                     }
                     
                     guard let data = dataResponse.data else {
+                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                        PKHUD.sharedHUD.hide()
                         completion(.failure(.notData))
                         return
                     }
                     
                     if let result = try? JSONDecoder().decode(Convert.self, from: data) {
                         PKHUD.sharedHUD.contentView = PKHUDSuccessView()
-                        PKHUD.sharedHUD.show()
-                        
-                        PKHUD.sharedHUD.hide(afterDelay: 1.0) { success in
-                            completion(.success(result))
-                        }
+                        PKHUD.sharedHUD.hide()
+                        completion(.success(result))
                         return
                     }
+                    PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                    PKHUD.sharedHUD.hide()
                     completion(.failure(.invalidJSON))
                 }
         }
