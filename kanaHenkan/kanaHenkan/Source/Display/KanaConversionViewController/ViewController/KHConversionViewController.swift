@@ -34,7 +34,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
         model.conversionStr = conversionView.conversionTextField.text ?? ""
         
         if(model.conversionStr.count != 0){
-            model.requestConversion(conversionStr: model.conversionStr,completion:
+            model.requestConversion(conversionStr: model.conversionStr,conversionType: model.conversionType,completion:
                 { result in
                     switch result {
                     case .success(let Convert):
@@ -48,6 +48,11 @@ extension KHConversionViewController: KHConversionViewDelegate{
         }else{
             conversionView.cautionLabel.isHidden = false
         }
+    }
+    
+    /// 変換タイプセグメント変更時のデリゲートメソッド
+    func conversionView(_ conversionView: KHConversionView, conversionTypeChanged segment: UISegmentedControl) {
+        model.conversionTypeInt = segment.selectedSegmentIndex
     }
 }
 

@@ -11,7 +11,6 @@
             <connections>
                 <outlet property="cautionLabel" destination="2Y9-qj-Qhp" id="Rob-XH-mRh"/>
                 <outlet property="conversionTextField" destination="vMt-Ao-0Ul" id="Jwz-PS-NZD"/>
-                <outlet property="conversionTypeSegment" destination="NHi-If-Tpl" id="XhD-5U-pgS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -72,6 +71,9 @@
                                         <segment title="ひらがな"/>
                                         <segment title="カタカナ"/>
                                     </segments>
+                                    <connections>
+                                        <action selector="conversionTypeChanged:" destination="-1" eventType="valueChanged" id="kKu-dg-1l5"/>
+                                    </connections>
                                 </segmentedControl>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="変換タイプ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-yF-hbY">
                                     <rect key="frame" x="144" y="55.5" width="87" height="21"/>
