@@ -23,7 +23,19 @@ class KHConversionView: CommonView {
     @IBOutlet var cautionLabel: UILabel!
     /**変換文字列入力テキストフィールド*/
     @IBOutlet var conversionTextField: UITextField!
+    /**変換文字列にルビを振った文字列を表示するラベル*/
+    @IBOutlet var conversionLabel: RubyLabel!
     
+    
+    /// ルビを含んだ文字列を出力する
+    /// - Parameter dispStr: ｜漢字《ルビ》の形式で作成された文字列
+    func setUpRubyLabel(dispStr: String) {
+        conversionLabel.attributedText = dispStr.createRuby()
+        conversionLabel.textAlignment = .center
+        conversionLabel.font = .systemFont(ofSize: 27.0)
+    }
+    
+
     
     /// 変換ボタン押下時メソッド
     /// - Parameter sender: 変換ボタン

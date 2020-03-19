@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KHConversionView" customModule="kanaHenkan" customModuleProvider="target">
             <connections>
                 <outlet property="cautionLabel" destination="2Y9-qj-Qhp" id="Rob-XH-mRh"/>
+                <outlet property="conversionLabel" destination="lCq-TG-4hH" id="KhB-jc-dg1"/>
                 <outlet property="conversionTextField" destination="vMt-Ao-0Ul" id="Jwz-PS-NZD"/>
             </connections>
         </placeholder>
@@ -35,6 +36,24 @@
                                     <color key="textColor" red="1" green="0.44024700935606953" blue="0.37492931432096566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-pN-hAO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-TG-4hH" customClass="RubyLabel" customModule="kanaHenkan" customModuleProvider="target">
+                                            <rect key="frame" x="187.5" y="188.5" width="0.0" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="lCq-TG-4hH" firstAttribute="centerY" secondItem="ZYX-pN-hAO" secondAttribute="centerY" constant="20" id="NKz-AI-zia"/>
+                                        <constraint firstItem="lCq-TG-4hH" firstAttribute="centerX" secondItem="ZYX-pN-hAO" secondAttribute="centerX" id="fME-fG-qfS"/>
+                                    </constraints>
+                                    <string key="userLabel">
+Result Output View</string>
+                                </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEY-iE-XbF">
                                     <rect key="frame" x="295" y="378" width="60" height="44"/>
                                     <constraints>
@@ -52,14 +71,18 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="vMt-Ao-0Ul" firstAttribute="top" secondItem="2Y9-qj-Qhp" secondAttribute="bottom" constant="25" id="0Bg-EM-Chl"/>
+                                <constraint firstItem="ZYX-pN-hAO" firstAttribute="leading" secondItem="EfP-Fy-qI9" secondAttribute="leading" id="0Sk-Lt-kWh"/>
                                 <constraint firstItem="pEY-iE-XbF" firstAttribute="leading" secondItem="vMt-Ao-0Ul" secondAttribute="trailing" constant="20" id="G2N-qs-WrK"/>
                                 <constraint firstItem="vMt-Ao-0Ul" firstAttribute="leading" secondItem="EfP-Fy-qI9" secondAttribute="leading" constant="40" id="Hjc-b9-GmS"/>
                                 <constraint firstItem="2Y9-qj-Qhp" firstAttribute="centerX" secondItem="EfP-Fy-qI9" secondAttribute="centerX" id="LVU-Dh-GMi"/>
+                                <constraint firstItem="ZYX-pN-hAO" firstAttribute="top" secondItem="EfP-Fy-qI9" secondAttribute="top" id="Le0-79-AyS"/>
                                 <constraint firstAttribute="bottom" secondItem="vMt-Ao-0Ul" secondAttribute="bottom" constant="50" id="XpS-V9-CzC"/>
                                 <constraint firstAttribute="trailing" secondItem="2Y9-qj-Qhp" secondAttribute="trailing" id="cN0-ap-Rwa"/>
                                 <constraint firstItem="2Y9-qj-Qhp" firstAttribute="leading" secondItem="EfP-Fy-qI9" secondAttribute="leading" id="geh-4H-Z3M"/>
+                                <constraint firstItem="2Y9-qj-Qhp" firstAttribute="top" secondItem="ZYX-pN-hAO" secondAttribute="bottom" id="nYq-vW-aAF"/>
                                 <constraint firstItem="pEY-iE-XbF" firstAttribute="centerY" secondItem="vMt-Ao-0Ul" secondAttribute="centerY" id="oHf-as-lGx"/>
                                 <constraint firstAttribute="trailing" secondItem="pEY-iE-XbF" secondAttribute="trailing" constant="20" id="oKJ-GJ-qlk"/>
+                                <constraint firstAttribute="trailing" secondItem="ZYX-pN-hAO" secondAttribute="trailing" id="tih-LT-ohk"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egO-H0-azM" userLabel="ConversionTypeChangeView">

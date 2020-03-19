@@ -40,6 +40,12 @@
 		EF5DFEDE241FD5710084AC0F /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEDD241FD5710084AC0F /* Convert.swift */; };
 		EF5DFEDF241FD5710084AC0F /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEDD241FD5710084AC0F /* Convert.swift */; };
 		EF5DFEE0241FD5710084AC0F /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEDD241FD5710084AC0F /* Convert.swift */; };
+		EF5DFEE72423C1350084AC0F /* String+Ruby.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEE62423C1350084AC0F /* String+Ruby.swift */; };
+		EF5DFEE82423C1350084AC0F /* String+Ruby.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEE62423C1350084AC0F /* String+Ruby.swift */; };
+		EF5DFEE92423C1350084AC0F /* String+Ruby.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEE62423C1350084AC0F /* String+Ruby.swift */; };
+		EF5DFEEC2423C1B50084AC0F /* RubyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */; };
+		EF5DFEED2423C1B50084AC0F /* RubyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */; };
+		EF5DFEEE2423C1B50084AC0F /* RubyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,8 @@
 		EF5DFED4241FAA410084AC0F /* KHConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KHConversionModel.swift; sourceTree = "<group>"; };
 		EF5DFED8241FD3410084AC0F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EF5DFEDD241FD5710084AC0F /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		EF5DFEE62423C1350084AC0F /* String+Ruby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ruby.swift"; sourceTree = "<group>"; };
+		EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5DFEBF241FA4EB0084AC0F /* UIColor+hexColor.swift */,
+				EF5DFEE62423C1350084AC0F /* String+Ruby.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -252,6 +261,7 @@
 		EF5DFEC6241FA6E40084AC0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF5DFEEA2423C18E0084AC0F /* rubyLabel */,
 				EF5DFEC7241FA6E40084AC0F /* KHConversionView.swift */,
 				EF5DFEC8241FA6E40084AC0F /* KHConversionView.xib */,
 			);
@@ -272,6 +282,14 @@
 				EF5DFEDD241FD5710084AC0F /* Convert.swift */,
 			);
 			path = JsonExport;
+			sourceTree = "<group>";
+		};
+		EF5DFEEA2423C18E0084AC0F /* rubyLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */,
+			);
+			path = rubyLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,8 +535,10 @@
 			files = (
 				EF5DFE6B241F94D30084AC0F /* AppDelegate.swift in Sources */,
 				EF5DFEDE241FD5710084AC0F /* Convert.swift in Sources */,
+				EF5DFEE72423C1350084AC0F /* String+Ruby.swift in Sources */,
 				EF5DFECB241FA6E40084AC0F /* KHConversionView.swift in Sources */,
 				EF5DFED1241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
+				EF5DFEEC2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEC0241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
 				EF5DFED9241FD3410084AC0F /* NetworkManager.swift in Sources */,
 				EF5DFEBA241FA33C0084AC0F /* CommonView.swift in Sources */,
@@ -536,8 +556,10 @@
 				EF5DFEC1241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
 				EF5DFECC241FA6E40084AC0F /* KHConversionView.swift in Sources */,
 				EF5DFEDA241FD3410084AC0F /* NetworkManager.swift in Sources */,
+				EF5DFEE82423C1350084AC0F /* String+Ruby.swift in Sources */,
 				EF5DFE82241F94E30084AC0F /* kanaHenkanTests.swift in Sources */,
 				EF5DFED2241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
+				EF5DFEED2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEBB241FA33C0084AC0F /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,8 +573,10 @@
 				EF5DFEC2241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
 				EF5DFECD241FA6E40084AC0F /* KHConversionView.swift in Sources */,
 				EF5DFEDB241FD3410084AC0F /* NetworkManager.swift in Sources */,
+				EF5DFEE92423C1350084AC0F /* String+Ruby.swift in Sources */,
 				EF5DFE8D241F94E30084AC0F /* kanaHenkanUITests.swift in Sources */,
 				EF5DFED3241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
+				EF5DFEEE2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEBC241FA33C0084AC0F /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
