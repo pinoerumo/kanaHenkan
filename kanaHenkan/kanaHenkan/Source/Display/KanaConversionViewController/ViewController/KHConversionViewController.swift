@@ -47,7 +47,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
                     }
             })
         }else{
-            conversionView.cautionLabel.isHidden = false
+            conversionView.changeCautionLabelDisplay(isShow: false)
         }
     }
     
@@ -64,7 +64,7 @@ extension KHConversionViewController: UITextFieldDelegate{
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        conversionView.cautionLabel.isHidden = true
+        conversionView.changeCautionLabelDisplay(isShow: true)
         return true
     }
 }
