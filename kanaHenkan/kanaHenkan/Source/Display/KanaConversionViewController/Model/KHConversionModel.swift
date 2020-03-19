@@ -8,7 +8,16 @@
 
 import UIKit
 
+protocol KHConversionModelDelegate: AnyObject {
+    func conversionModel(_ conversionModel: KHConversionModel,
+                         sendRubyString rubyString: String)
+}
+
+
 class KHConversionModel {
+    
+    weak var delegate: KHConversionModelDelegate?
+    
     /**変換前文字列*/
     var conversionStr:String = ""
     /**変換タイプ*/

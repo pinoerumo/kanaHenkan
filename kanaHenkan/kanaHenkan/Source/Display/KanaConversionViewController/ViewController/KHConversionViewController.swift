@@ -15,6 +15,7 @@ class KHConversionViewController: UIViewController {
     override func loadView() {
         self.view = conversionView;
         conversionView.delegate = self
+        model.delegate = self
     }
     
     override func viewDidLoad() {
@@ -38,8 +39,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
                 { result in
                     switch result {
                     case .success(let convert):
-                        self.model.conversionStr = convert.converted
-                       
+                        self.model.convertStringToRubyFormat(beforeString: self.model.conversionStr, afterString: convert.converted)
                         break
                     case .failure(let error):
                         print(error)
@@ -54,6 +54,13 @@ extension KHConversionViewController: KHConversionViewDelegate{
     /// 変換タイプセグメント変更時のデリゲートメソッド
     func conversionView(_ conversionView: KHConversionView, conversionTypeChanged segment: UISegmentedControl) {
         model.conversionTypeInt = segment.selectedSegmentIndex
+    }
+}
+
+extension KHConversionViewController: KHConversionModelDelegate{
+    //
+    func conversionModel(_ conversionModel: KHConversionModel, sendRubyString rubyString: String) {
+        self.conversionView.setUpRubyLabel(dispStr: rubyString)
     }
 }
 
