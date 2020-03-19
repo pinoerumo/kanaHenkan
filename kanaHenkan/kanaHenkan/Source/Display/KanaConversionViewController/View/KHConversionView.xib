@@ -39,7 +39,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-pN-hAO">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-TG-4hH" customClass="RubyLabel" customModule="kanaHenkan" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-TG-4hH" customClass="RubyLabel" customModule="kanaHenkan" customModuleProvider="target">
                                             <rect key="frame" x="187.5" y="188.5" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                             <nil key="textColor"/>
@@ -50,6 +50,7 @@
                                     <constraints>
                                         <constraint firstItem="lCq-TG-4hH" firstAttribute="centerY" secondItem="ZYX-pN-hAO" secondAttribute="centerY" constant="20" id="NKz-AI-zia"/>
                                         <constraint firstItem="lCq-TG-4hH" firstAttribute="centerX" secondItem="ZYX-pN-hAO" secondAttribute="centerX" id="fME-fG-qfS"/>
+                                        <constraint firstItem="lCq-TG-4hH" firstAttribute="width" relation="lessThanOrEqual" secondItem="ZYX-pN-hAO" secondAttribute="width" id="ozs-Ij-5pK"/>
                                     </constraints>
                                     <string key="userLabel">
 Result Output View</string>
