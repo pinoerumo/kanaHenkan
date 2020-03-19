@@ -36,7 +36,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
         
         if(model.conversionStr.count != 0){
             model.requestConversion(conversionStr: model.conversionStr,conversionType: model.conversionType,completion:
-                { result in
+                { [unowned self] result in
                     switch result {
                     case .success(let convert):
                         self.model.convertStringToRubyFormat(beforeString: self.model.conversionStr, afterString: convert.converted)
