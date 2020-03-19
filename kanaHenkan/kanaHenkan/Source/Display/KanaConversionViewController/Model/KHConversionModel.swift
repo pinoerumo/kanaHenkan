@@ -16,10 +16,19 @@ class KHConversionModel {
     /**変換タイプ*/
     var conversionType:String{
         get{
-            return conversionTypeInt == 0 ? "hiragana" : "katakana"
+            return conversionTypeInt == 0 ? paramHiragana : paramKatakana
         }
     }
     
+    
+    /// 変換前、変換後の文字列を元に「｜文字列《ルビ》」の形に変換し返却
+    /// - Parameters:
+    ///   - beforeString: 変換前文字列
+    ///   - afterString: 変換後文字列
+    func convertStringToRubyFormat(beforeString: String, afterString: String) {
+        let rubyStr = rubyStartStr + beforeString + rubyLeftBrackets + afterString + rubyRightBrackets
+        delegate?.conversionModel(self, sendRubyString: rubyStr)
+    }
     
     func requestConversion(conversionStr: String,
                            conversionType: String,

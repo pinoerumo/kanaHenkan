@@ -23,14 +23,14 @@ final class NetworkManager: NSObject {
     func requestConvert(beforeStr: String, conversionType: String, completion: @escaping (Result<Convert, APIError>) -> Void) {
         
         let parameters = [
-            "app_id": "4ad24a2713c1525039b1f9c2f5993caf1e17989e598df81a3caf80f5fab0c567",
-            "sentence": beforeStr,
-            "output_type": conversionType
+            keyAppId: paramAppid,
+            keySentence: beforeStr,
+            keyOutputType: conversionType
         ]
         
         PKHUD.sharedHUD.contentView = PKHUDProgressView()
         PKHUD.sharedHUD.show()
-        AF.request("https://labs.goo.ne.jp/api/hiragana",
+        AF.request(requestURL,
                    method: .post,
                    parameters: parameters,
                    encoding: JSONEncoding.default, headers: nil)
