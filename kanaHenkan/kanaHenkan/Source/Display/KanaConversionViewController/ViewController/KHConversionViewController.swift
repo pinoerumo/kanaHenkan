@@ -37,8 +37,9 @@ extension KHConversionViewController: KHConversionViewDelegate{
             model.requestConversion(conversionStr: model.conversionStr,conversionType: model.conversionType,completion:
                 { result in
                     switch result {
-                    case .success(let Convert):
-                        print(Convert)
+                    case .success(let convert):
+                        self.model.conversionStr = convert.converted
+                       
                         break
                     case .failure(let error):
                         print(error)

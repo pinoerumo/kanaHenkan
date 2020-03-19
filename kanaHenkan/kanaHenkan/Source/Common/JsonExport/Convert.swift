@@ -9,7 +9,12 @@
 import Foundation
 
 struct Convert: Codable {
-    let converted, outputType, requestID: String
+    /**変換後文字列*/
+    let converted: String
+    /**出力種別*/
+    let outputType: String
+    /**リクエストID*/
+    let requestID: String
 
     enum CodingKeys: String, CodingKey {
         case converted
