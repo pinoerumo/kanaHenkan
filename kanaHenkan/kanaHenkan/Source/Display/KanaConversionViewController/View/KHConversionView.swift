@@ -35,8 +35,11 @@ class KHConversionView: CommonView {
         conversionLabel.font = .systemFont(ofSize: 27.0)
     }
     
-    func changeCautionLabelDisplay(isShow: Bool) {
-        cautionLabel.isHidden = isShow
+    
+    /// 警告ラベルを非表示にするメソッド
+    /// - Parameter isNotShow: true:非表示　false:表示
+    func changeCautionLabelDisplay(isNotShow: Bool) {
+        cautionLabel.isHidden = isNotShow
     }
     
     /// 変換ボタン押下時メソッド

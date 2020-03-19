@@ -39,6 +39,12 @@ class KHConversionModel {
         delegate?.conversionModel(self, sendRubyString: rubyStr)
     }
     
+    
+    /// 文字列の変換リクエストを通信クラスに送る
+    /// - Parameters:
+    ///   - conversionStr: 変換する文字列
+    ///   - conversionType: 変換タイプ
+    ///   - completion: 成功クロージャ
     func requestConversion(conversionStr: String,
                            conversionType: String,
                            completion: @escaping (Result<Convert, APIError>) -> Void) {

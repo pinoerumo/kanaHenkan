@@ -47,7 +47,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
                     }
             })
         }else{
-            conversionView.changeCautionLabelDisplay(isShow: false)
+            conversionView.changeCautionLabelDisplay(isNotShow: false)
         }
     }
     
@@ -58,7 +58,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
 }
 
 extension KHConversionViewController: KHConversionModelDelegate{
-    //
+    //通信完了後、文字列の変換が終わった際のメソッド
     func conversionModel(_ conversionModel: KHConversionModel, sendRubyString rubyString: String) {
         self.conversionView.setUpRubyLabel(dispStr: rubyString)
     }
@@ -71,7 +71,7 @@ extension KHConversionViewController: UITextFieldDelegate{
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        conversionView.changeCautionLabelDisplay(isShow: true)
+        conversionView.changeCautionLabelDisplay(isNotShow: true)
         return true
     }
 }
