@@ -40,7 +40,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
                 { [unowned self] result in
                     switch result {
                     case .success(let convert):
-                        self.model.convertStringToRubyFormat(beforeString: self.model.conversionStr, afterString: convert.converted)
+                        self.model.sendConvertString(beforeString: self.model.conversionStr, afterString: convert.converted)
                         break
                     case .failure(let error):
                         CommonAPI.alert(title: messageErrorTitle, message: messageError, targetVC: self)
