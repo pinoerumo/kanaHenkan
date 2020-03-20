@@ -33,3 +33,8 @@ let keyAppId = "app_id"
 let keySentence = "sentence"
 /**出力種別：hiragana(ひらがな化)、katakana(カタカナ化)のどちらかを指定してください。*/
 let keyOutputType = "output_type"
+
+// MARK: - メッセージ定数
+let messageErrorTitle = "エラー"
+
+let messageError = "通信に失敗しました"

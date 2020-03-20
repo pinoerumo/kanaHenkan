@@ -42,6 +42,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
                         self.model.convertStringToRubyFormat(beforeString: self.model.conversionStr, afterString: convert.converted)
                         break
                     case .failure(let error):
+                        CommonAPI.alert(title: messageErrorTitle, message: messageError, targetVC: self)
                         print(error)
                         break
                     }

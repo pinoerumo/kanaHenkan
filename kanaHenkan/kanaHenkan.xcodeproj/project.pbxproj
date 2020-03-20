@@ -49,6 +49,13 @@
 		EF5DFEF02423E4510084AC0F /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEF2423E4510084AC0F /* CommonKey.swift */; };
 		EF5DFEF12423E4510084AC0F /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEF2423E4510084AC0F /* CommonKey.swift */; };
 		EF5DFEF22423E4510084AC0F /* CommonKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEEF2423E4510084AC0F /* CommonKey.swift */; };
+		EF5DFEF32424089E0084AC0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6C241F94D30084AC0F /* SceneDelegate.swift */; };
+		EF5DFEF42424089F0084AC0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6C241F94D30084AC0F /* SceneDelegate.swift */; };
+		EF5DFEF5242408A30084AC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6A241F94D30084AC0F /* AppDelegate.swift */; };
+		EF5DFEF6242408A40084AC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFE6A241F94D30084AC0F /* AppDelegate.swift */; };
+		EF5DFEF924248E8D0084AC0F /* CommonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEF824248E8D0084AC0F /* CommonAPI.swift */; };
+		EF5DFEFA24248E8D0084AC0F /* CommonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEF824248E8D0084AC0F /* CommonAPI.swift */; };
+		EF5DFEFB24248E8D0084AC0F /* CommonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DFEF824248E8D0084AC0F /* CommonAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +108,7 @@
 		EF5DFEE62423C1350084AC0F /* String+Ruby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ruby.swift"; sourceTree = "<group>"; };
 		EF5DFEEB2423C1B50084AC0F /* RubyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyLabel.swift; sourceTree = "<group>"; };
 		EF5DFEEF2423E4510084AC0F /* CommonKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonKey.swift; sourceTree = "<group>"; };
+		EF5DFEF824248E8D0084AC0F /* CommonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +218,7 @@
 		EF5DFEB8241FA2E30084AC0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EF5DFEF824248E8D0084AC0F /* CommonAPI.swift */,
 				EF5DFEEF2423E4510084AC0F /* CommonKey.swift */,
 				EF5DFEB9241FA33C0084AC0F /* CommonView.swift */,
 				EF5DFED8241FD3410084AC0F /* NetworkManager.swift */,
@@ -546,6 +555,7 @@
 				EF5DFED1241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEEC2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEC0241FA4EB0084AC0F /* UIColor+hexColor.swift in Sources */,
+				EF5DFEF924248E8D0084AC0F /* CommonAPI.swift in Sources */,
 				EF5DFED9241FD3410084AC0F /* NetworkManager.swift in Sources */,
 				EF5DFEBA241FA33C0084AC0F /* CommonView.swift in Sources */,
 				EF5DFE6D241F94D30084AC0F /* SceneDelegate.swift in Sources */,
@@ -565,9 +575,12 @@
 				EF5DFEDA241FD3410084AC0F /* NetworkManager.swift in Sources */,
 				EF5DFEE82423C1350084AC0F /* String+Ruby.swift in Sources */,
 				EF5DFE82241F94E30084AC0F /* kanaHenkanTests.swift in Sources */,
+				EF5DFEF5242408A30084AC0F /* AppDelegate.swift in Sources */,
+				EF5DFEFA24248E8D0084AC0F /* CommonAPI.swift in Sources */,
 				EF5DFED2241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEED2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEBB241FA33C0084AC0F /* CommonView.swift in Sources */,
+				EF5DFEF32424089E0084AC0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,9 +596,12 @@
 				EF5DFEDB241FD3410084AC0F /* NetworkManager.swift in Sources */,
 				EF5DFEE92423C1350084AC0F /* String+Ruby.swift in Sources */,
 				EF5DFE8D241F94E30084AC0F /* kanaHenkanUITests.swift in Sources */,
+				EF5DFEF6242408A40084AC0F /* AppDelegate.swift in Sources */,
+				EF5DFEFB24248E8D0084AC0F /* CommonAPI.swift in Sources */,
 				EF5DFED3241FA6E40084AC0F /* KHConversionViewController.swift in Sources */,
 				EF5DFEEE2423C1B50084AC0F /* RubyLabel.swift in Sources */,
 				EF5DFEBC241FA33C0084AC0F /* CommonView.swift in Sources */,
+				EF5DFEF42424089F0084AC0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
