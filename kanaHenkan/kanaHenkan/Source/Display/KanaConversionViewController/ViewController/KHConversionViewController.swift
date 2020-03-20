@@ -28,6 +28,7 @@ class KHConversionViewController: UIViewController {
     }
 }
 
+// MARK: - KHConversionViewDelegate
 extension KHConversionViewController: KHConversionViewDelegate{
     /// 変換ボタン押下時のデリゲートメソッド
     func conversionView(_ conversionView: KHConversionView, tappedConversionButton button: UIButton) {
@@ -58,6 +59,7 @@ extension KHConversionViewController: KHConversionViewDelegate{
     }
 }
 
+// MARK: - KHConversionModelDelegate
 extension KHConversionViewController: KHConversionModelDelegate{
     //通信完了後、文字列の変換が終わった際のメソッド
     func conversionModel(_ conversionModel: KHConversionModel, sendRubyString rubyString: String) {
@@ -65,6 +67,7 @@ extension KHConversionViewController: KHConversionModelDelegate{
     }
 }
 
+// MARK: - TextFieldDelegate
 extension KHConversionViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField:UITextField) -> Bool {
         conversionView.endEditing(true)
