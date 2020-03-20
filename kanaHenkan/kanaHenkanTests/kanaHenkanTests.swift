@@ -24,6 +24,16 @@ class kanaHenkanTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testConversion() {
+        let model = KHConversionModel()
+        //期待する戻り値
+        let expected = "｜今日はいい天気です《きょうはいいてんきです》"
+        // 実際の戻り値
+        let actual: String = model.convertStringToRubyFormat(beforeString: "今日はいい天気です", afterString: "きょうはいいてんきです")
+
+        XCTAssertEqual(actual, expected)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
