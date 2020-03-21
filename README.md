@@ -11,7 +11,7 @@
 ### 画面構成
 変換と表示が１画面で行われる。  
 現在１画面のみとなっている  
-![screen1](https://user-images.githubusercontent.com/40710040/77222102-8db47580-6b93-11ea-94a6-bbebcdbc9772.png)
+![screen1](https://user-images.githubusercontent.com/40710040/77222267-1da6ef00-6b95-11ea-945d-4d9da58c7115.png)
   
 ## アピールポイント
 StoryBoard使用時、困る点として多人数での開発時のマージで高確率で競合し、競合したコードが何を表しているのかわからずマージ漏れがないかの確認が難しいなどの点から保守性に富んだプロジェクトを提供できないと判断し今回StoryBoardを使用していない。  
