@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import kanaHenkan
 
 class kanaHenkanUITests: XCTestCase {
 
@@ -27,9 +28,24 @@ class kanaHenkanUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // 変換TFを取得
+        let conversiontfTextField = app.textFields["conversionTF"]
+        // 変換ボタンを取得
+        let convrsionButton = XCUIApplication().buttons["conversionButton"]
+        // 警告ラベルを取得
+        let cautionLabel = XCUIApplication().staticTexts["cautionLabel"]
+        //警告ラベルが非表示になっているか
+        XCTAssertFalse(cautionLabel.exists)
+        //0文字の状態でボタンをタップ
+        convrsionButton.tap()
+        //警告ラベルが表示しているか
+        XCTAssertTrue(cautionLabel.exists)
+        //TFをタップ
+        conversiontfTextField.tap()
+        //文字を入力
+        app.typeText("test")
+        //警告ラベルが非表示になっているか
+        XCTAssertFalse(cautionLabel.exists)
     }
 
     func testLaunchPerformance() {

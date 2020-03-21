@@ -27,11 +27,13 @@
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMt-Ao-0Ul">
                                     <rect key="frame" x="40" y="383" width="235" height="34"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="conversionTF"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 </textField>
                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字が入力されていません" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Y9-qj-Qhp">
                                     <rect key="frame" x="0.0" y="337" width="375" height="21"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="cautionLabel"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="1" green="0.44024700935606953" blue="0.37492931432096566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -57,6 +59,7 @@ Result Output View</string>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEY-iE-XbF">
                                     <rect key="frame" x="295" y="378" width="60" height="44"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="conversionButton"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="DLM-rH-Zj2"/>
                                         <constraint firstAttribute="width" constant="60" id="UIi-AJ-XxT"/>

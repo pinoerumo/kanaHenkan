@@ -34,7 +34,7 @@ class KHConversionModel {
     /// - Parameters:
     ///   - beforeString: 変換前文字列
     ///   - afterString: 変換後文字列
-    private func convertStringToRubyFormat(beforeString: String, afterString: String) -> String {
+    func convertStringToRubyFormat(beforeString: String, afterString: String) -> String {
         let rubyStr = rubyStartStr + beforeString + rubyLeftBrackets + afterString + rubyRightBrackets
         return rubyStr
     }
