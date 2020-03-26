@@ -25,27 +25,7 @@ class kanaHenkanUITests: XCTestCase {
     }
 
     func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-        // 変換TFを取得
-        let conversiontfTextField = app.textFields["conversionTF"]
-        // 変換ボタンを取得
-        let convrsionButton = XCUIApplication().buttons["conversionButton"]
-        // 警告ラベルを取得
-        let cautionLabel = XCUIApplication().staticTexts["cautionLabel"]
-        //警告ラベルが非表示になっているか
-        XCTAssertFalse(cautionLabel.exists)
-        //0文字の状態でボタンをタップ
-        convrsionButton.tap()
-        //警告ラベルが表示しているか
-        XCTAssertTrue(cautionLabel.exists)
-        //TFをタップ
-        conversiontfTextField.tap()
-        //文字を入力
-        app.typeText("test")
-        //警告ラベルが非表示になっているか
-        XCTAssertFalse(cautionLabel.exists)
+
     }
 
     func testLaunchPerformance() {

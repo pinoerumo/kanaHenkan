@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 protocol KHConversionViewDelegate: AnyObject {
     func conversionView(_ conversionView: KHConversionView,

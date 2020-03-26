@@ -6,9 +6,8 @@
 //  Copyright © 2020 boko. All rights reserved.
 //
 
-import UIKit
 import Alamofire
-import PKHUD
+
 
 final class NetworkManager: NSObject {
     static let shared = NetworkManager()
@@ -28,8 +27,7 @@ final class NetworkManager: NSObject {
             keyOutputType: conversionType
         ]
         
-        PKHUD.sharedHUD.contentView = PKHUDProgressView()
-        PKHUD.sharedHUD.show()
+
         AF.request(requestURL,
                    method: .post,
                    parameters: parameters,
@@ -37,34 +35,24 @@ final class NetworkManager: NSObject {
             .responseJSON { (dataResponse) in
                 DispatchQueue.main.async {
                     if let error = dataResponse.error {
-                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
-                        PKHUD.sharedHUD.hide()
                         completion(.failure(.network(error.localizedDescription)))
                         return
                     }
                     
                     if dataResponse.response?.statusCode != 200 {
-                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
-                        PKHUD.sharedHUD.hide()
                         completion(.failure(.server))
                         return
                     }
                     
                     guard let data = dataResponse.data else {
-                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
-                        PKHUD.sharedHUD.hide()
                         completion(.failure(.notData))
                         return
                     }
                     
                     if let result = try? JSONDecoder().decode(Convert.self, from: data) {
-                        PKHUD.sharedHUD.contentView = PKHUDSuccessView()
-                        PKHUD.sharedHUD.hide()
                         completion(.success(result))
                         return
                     }
-                    PKHUD.sharedHUD.contentView = PKHUDErrorView()
-                    PKHUD.sharedHUD.hide()
                     completion(.failure(.invalidJSON))
                 }
         }

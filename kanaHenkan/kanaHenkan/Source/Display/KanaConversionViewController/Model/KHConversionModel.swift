@@ -6,7 +6,6 @@
 //  Copyright © 2020 boko. All rights reserved.
 //
 
-import UIKit
 
 protocol KHConversionModelDelegate: AnyObject {
     func conversionModel(_ conversionModel: KHConversionModel,
@@ -29,12 +28,11 @@ class KHConversionModel {
         }
     }
     
-    
     /// 変換前、変換後の文字列を元に「｜文字列《ルビ》」の形に変換し返却
     /// - Parameters:
     ///   - beforeString: 変換前文字列
     ///   - afterString: 変換後文字列
-    func convertStringToRubyFormat(beforeString: String, afterString: String) -> String {
+    private func convertStringToRubyFormat(beforeString: String, afterString: String) -> String {
         let rubyStr = rubyStartStr + beforeString + rubyLeftBrackets + afterString + rubyRightBrackets
         return rubyStr
     }
@@ -44,7 +42,6 @@ class KHConversionModel {
         let rubyStr = convertStringToRubyFormat(beforeString: beforeString, afterString: afterString)
         delegate?.conversionModel(self, sendRubyString: rubyStr)
     }
-    
     
     /// 文字列の変換リクエストを通信クラスに送る
     /// - Parameters:

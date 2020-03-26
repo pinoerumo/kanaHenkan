@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PKHUD
 
 class KHConversionViewController: UIViewController {
     private let conversionView = KHConversionView()
@@ -36,13 +37,19 @@ extension KHConversionViewController: KHConversionViewDelegate{
         model.conversionStr = conversionView.conversionTextField.text ?? ""
         
         if(model.conversionStr.count != 0){
+            PKHUD.sharedHUD.contentView = PKHUDProgressView()
+            PKHUD.sharedHUD.show()
             model.requestConversion(conversionStr: model.conversionStr,conversionType: model.conversionType,completion:
                 { [unowned self] result in
                     switch result {
                     case .success(let convert):
+                        PKHUD.sharedHUD.contentView = PKHUDSuccessView()
+                        PKHUD.sharedHUD.hide()
                         self.model.sendConvertString(beforeString: self.model.conversionStr, afterString: convert.converted)
                         break
                     case .failure(let error):
+                        PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                        PKHUD.sharedHUD.hide()
                         CommonAPI.alert(title: messageErrorTitle, message: messageError, targetVC: self)
                         print(error)
                         break
